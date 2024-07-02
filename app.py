@@ -53,4 +53,5 @@ for html_file in html_files:
 
             # Open the Markdown file and write the content
             with open(os.path.join(DIRECTORY, file_type, md_file), 'w', encoding='utf8') as md_file:
+                print(f"Adding <{html_file}> to the {file_type} subdirectory...")
                 md_file.write(markdown_content)
